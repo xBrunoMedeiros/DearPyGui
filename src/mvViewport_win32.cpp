@@ -109,7 +109,7 @@ mvPrerender(mvViewport& viewport)
 
 }
 
-mv_internal LRESULT
+mv_internal LRESULT CALLBACK
 mvHandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept
 {
 	if (ImGui_ImplWin32_WndProcHandler(hWnd, msg, wParam, lParam))
